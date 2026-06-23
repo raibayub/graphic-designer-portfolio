@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tayyaba Ayub | Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/webp" href="https://raw.githubusercontent.com/tayyabaebae/porfolio/main/favicon.webp">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">Tayyaba Ayub</a>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#tools">Tools</a>
+            <a href="#PORTFOLIO">PORTFOLIO</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hamburger" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <a href="#home" onclick="closeSidebar()">Home</a>
+        <a href="#services" onclick="closeSidebar()">Services</a>
+        <a href="#tools" onclick="closeSidebar()">Tools</a>
+        <a href="#PORTFOLIO" onclick="closeSidebar()">PORTFOLIO</a>
+        <a href="#contact" onclick="closeSidebar()">Contact</a>
+    </div>
+
+
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="image/bg.webp" alt="Tayyaba Ayub">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm <span>Tayyaba Ayub</span></h1>
+            <h3 class="typing-text">I'm a <span class="typing-role">Graphic Designer</span></h3>
+            <p>A passionate and detail-oriented designer who transforms ideas into meaningful visuals. I specialize in
+                brand identity, marketing assets, and clean, modern design.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/tayyaba-ayub-210bb7322/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/tayyabaebae/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.behance.net/tayyabaayub1" target="_blank"><i class="fab fa-behance"></i></a>
+            </div>
+            <br>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2 class="section-title" data-aos="zoom-in">Services</h2>
+        <p class="section-text">I offer a range of creative services including:</p>
+        <ul class="list">
+            <li data-aos="fade-left">✓ Logo & Brand Identity Design</li>
+            <li data-aos="fade-right">✓ Social Media Graphics</li>
+            <li data-aos="fade-left">✓ Print Design (Flyers, Brochures)</li>
+            <li data-aos="fade-right">✓ Packaging Design</li>
+        </ul>
+    </section>
+
+    <section id="tools" class="section">
+        <h2 class="section-title" data-aos="fade-down">Tools</h2>
+        <div class="badge-container">
+            <div class="badge" data-aos="zoom-in">
+                <img src="image/ai.webp" alt="Adobe Illustrator">
+                <span>Adobe Illustrator</span>
+            </div>
+            <div class="badge" data-aos="zoom-in">
+                <img src="image/ps.webp" alt="Photoshop">
+                <span>Photoshop</span>
+            </div>
+            <div class="badge" data-aos="zoom-in">
+                <img src="image/id.webp" alt="InDesign">
+                <span>InDesign</span>
+            </div>
+            <div class="badge" data-aos="zoom-in">
+                <img src="image/figma.webp" alt="Figma">
+                <span>Figma</span>
+            </div>
+
+    </section>
+
+    <section id="PORTFOLIO" class="section">
+        <h2 class="section-title" data-aos="fade-down">PORTFOLIO</h2>
+        <p class="section-text" data-aos="zoom-in">
+            💼 3+ years working with agencies and freelance clients. My work has helped startups, influencers,
+            and small businesses define their brand voice visually.
+        </p>
+        <div class="experience-gallery" id="lightgallery">
+            <a data-src="image/dew-canva.webp">
+                <img src="image/dew-canva.webp" alt="Project Image" data-aos="fade-up">
+            </a>
+            <a data-src="image/banknote.webp">
+                <img src="image/banknote.webp" alt="Banknote Mockup" data-aos="fade-up">
+            </a>
+            <a data-src="image/wangcock.webp">
+                <img src="image/wangcock.webp" alt="Wang Coke Image" data-aos="fade-up">
+            </a>
+            <a data-src="image/juice.webp">
+                <img src="image/juice.webp" alt="Juice Image" data-aos="fade-up">
+            </a>
+            <a data-src="image/qorma.webp">
+                <img src="image/qorma.webp" alt="Qorma Image" data-aos="fade-up">
+            </a>
+            <a data-src="image/magzine.webp">
+                <img src="image/magzine.webp" alt="Magazine Image" data-aos="fade-up">
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title" data-aos="fade-down">Contact</h2>
+        <p class="section-text" data-aos="zoom-in">
+            📧 Email me at <a href="mailto:tayyabaebae@gmail.com" class="email">tayyabaebae@gmail.com</a>
+        </p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+
+        function closeSidebar() {
+            document.getElementById("sidebar").classList.remove("active");
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false // <--- change this to false so it works every scroll
+        });
+    </script>
+    <!-- 🟣 LightGallery Scripts (at bottom before </body>) -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+
+    <script>
+        lightGallery(document.getElementById('lightgallery'), {
+            selector: 'img',
+            zoom: true,
+            thumbnail: true,
+            download: false
+        });
+    </script>
+
+
+
+</body>
+
+</html>
