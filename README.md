@@ -6,7 +6,7 @@ A clean, responsive personal portfolio website for a graphic designer, built wit
 
 ## 🔗 Live Demo
 
-> [View Portfolio](https://tayyabaebae.github.io/) 
+> [View Portfolio](https://raibayub.github.io/graphic-designer-portfolio/) 
 
 ---
 
